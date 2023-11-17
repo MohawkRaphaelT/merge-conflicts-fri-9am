@@ -6,7 +6,7 @@ namespace game
     {
         // If you need variables in the Program class (outside functions), you must mark them as static
         static string title = "Game Title";
-
+        static Tristan_Ball ball;
         static void Main(string[] args)
         {
             // Create a window to draw to. The arguments define width and height
@@ -37,12 +37,12 @@ namespace game
 
         static void Setup()
         {
-            // Your one-time setup code here
+            ball = new Tristan_Ball();
         }
 
         static void Update()
         {
-            // Your game code run each frame here
+            ball.Draw();
         }
     }
 }
