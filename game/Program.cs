@@ -6,8 +6,6 @@ namespace game
     {
         // If you need variables in the Program class (outside functions), you must mark them as static
         static string title = "Game Title";
-        static Orb orb;
-
 
         static void Main(string[] args)
         {
@@ -39,12 +37,12 @@ namespace game
 
         static void Setup()
         {
-            orb = new Orb();
+            // Your one-time setup code here
         }
 
         static void Update()
         {
-            orb.Draw();
+            // Your game code run each frame here
         }
     }
 }
